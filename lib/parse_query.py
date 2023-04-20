@@ -139,7 +139,7 @@ def parse_wttrin_png_name(name):
     parsed = {}
     to_be_parsed = {}
 
-    if name.lower()[-4:] == '.png':
+    if name.lower()[-4:] == '.png' || name.lower()[-4:] == '/png' || name.lower()[-4:] == 'xpng':
         parsed['filetype'] = 'png'
         name = name[:-4]
 
